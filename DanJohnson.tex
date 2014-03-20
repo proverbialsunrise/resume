@@ -85,9 +85,20 @@
 
 }
 
+
 \newcommand{\ressubheading}[4]{
 
-\begin{tabular*}{7in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+\renewcommand{\cftdotfill}[1]{%
+  \def\@tempa{#1}%
+  \def\@tempb{\cftnodots}%
+  \ifx\@tempa\@tempb
+    \hfill
+  \else
+    \leaders\hbox{$\m@th\mkern #1 mu\hbox{\cftdot}\mkern #1 mu$}\hfill
+  \fi
+}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 
 		\textbf{#1} & #2 \\
 
@@ -103,7 +114,7 @@
 
 \textbf{\Large Daniel Johnson} & \textbf{\today} \\
 
-Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@uwaterloo.ca \\
+Graduate Student, Systems Design Engineering, University of Waterloo & dan.johnson@uwaterloo.ca \\
 
 135 Moore Ave, Waterloo, ON, N2J1X4 \\
 
@@ -119,7 +130,7 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 
 \item {\bf Modeling:} 2-D and 3-D Dynamics, Simulation of mechanical systems, control systems
 
-\item {\bf Development:} Objective-C/Cocoa, C/C++, Python, MATLAB, .NET and Visual Studio.
+\item {\bf Development:} Objective-C/Cocoa, C/C++, Python, MATLAB
 
 \item {\bf Robotics:} Autonomous Mapping, Computer Vision, Image processing.
 
@@ -127,9 +138,9 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 
 \item Communication: excels at writing clear and concise documents and presenting and explaining ideas.
 
-\item Learning: loves to learn new things and explore new areas of research. 
+\item Learning: loves to learn new things and explore new areas technology. 
 
-\item Leadership: organizes and enables other workers to perform their tasks. Leads by example.
+\item Leadership: organizes and enables others to perform their tasks. Leads by example.
 
 \end{itemize}
 
@@ -155,14 +166,14 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 
 	\begin{itemize}
 
-	    \resitem{Designed and implemented a testing framework for location algorithms on iPhones and iPads.}
+	    \resitem{Designed and implemented a testing framework in the form of an iOS application for location algorithms on iPhones and iPads.}
 		\resitem{Improved location algorithms used in iOS.}
 		\resitem{Developed internal mobile applications using Objective-C, C and C++ for iPhone.}
 
 	\end{itemize}
 
 
-        \ressubheading{Trimble Navigation}{Christchurch, NZ}{GPS Software Tester}{Summer 2009}
+        \ressubheading{Trimble Navigation}{Christchurch, NZ}{GPS Software Tester}{May-Aug 2009}
 
 	\begin{itemize}
 
@@ -203,9 +214,6 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 	\begin{itemize}
 		\resitem{\emph{\textbf{SYDE 461/462}: Sep 2011-Apr 2012} - Developed location and mapping algorithms for the NASA Sample Retrieval Challenge.}
 
-		\resitem{\emph{\textbf{SYDE 553/653} Sep 2011-Apr 2012} - 3-D Modeling and computer simulation of robotic soccer ball kicking leg for use in testing equipment.} 
-
-
     \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -225,12 +233,11 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 
 	\end{itemize}
 
-\ressubheading{The Water Boys - UWaterloo Male A Cappella}{\url{www.waterboysuw.com}}{President}{2009-2012}
+\ressubheading{Crash Ultimate - KW Guelph Competitive Ultimate}{\url{www.crashultimate.ca}}{Captain}{2013-}
 
 	\begin{itemize}
-		\resitem{Interact with the community to plan gigs and organize events}
-		\resitem{Rehearse weekly with a group of ~16 male singers}
-		\resitem{Hold auditions for the group at the beginning of each term}
+		\resitem{Led a group of 25 adults to achieve a common goal }
+		\resitem{Managed emotions, team focus, and a variety of personalities in pursuit of excellence }
 	\end{itemize}
 
 
@@ -241,9 +248,10 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
+    \resitem {\emph{Ontario Graduate Scholarship} - Sep 2013}
 	\resitem {\emph{NSERC Alexander Graham Bell Scholarship} - Sep 2012}
 	\resitem {\emph{NSERC Undergraduate Student Research Award} - May 2011}
-	\resitem{\emph{President's Research Award} - Sep 2011}
+	\resitem {\emph{President's Research Award} - Sep 2011}
 	\resitem {\emph{NSERC Undergraduate Student Research Award} - Sep 2008}
 \end{itemize}
 
@@ -254,7 +262,7 @@ Graduate Student, Systems Design Engineering, University of Waterloo & d3johnso@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
- {\bf Hobbies:} Singing (A Cappella and Barbershop in particular), Ultimate Frisbee, Soccer, Basketball, Squash
+ {\bf Hobbies:} Singing (A Cappella and Barbershop in particular), Ultimate Frisbee, Soccer, Basketball
 
  {\bf My Ideal Position:} Working with a team solving interesting problems related to 3-d dynamic modelling, biomechanics, and sports.  I'm passionate about playing sports competitively and getting involved in improving sports equipment or training would be fascinating. My Master's thesis is focused on the biomechanics of golf and I'd be excited to work on similar problems within other sports.
 
