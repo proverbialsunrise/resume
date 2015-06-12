@@ -1,0 +1,86 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Daniel} % Your first name
+\familyname{Johnson} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{142 Wood St. Apt. B}{Kitchener, ON N2G2H8}
+\mobile{(226) 989 0511}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{dan@ddajohnson.com}
+\homepage{http://ddajohnson.com}{ddajohnson.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+
+\clearpage
+
+\recipient{Triton}{Velocity Foundry\\ 45 Water Street South Kitchener, ON} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+
+\makelettertitle % Print letter title
+
+My name is Daniel Johnson and I'm interested in working at Triton as either an iOS Developer or Digital Signal Processing Guru.  I'm excited about using technology to improve sports performance, training, and coaching and I have the technical skills required to excel in either of these roles. As an athlete, I believe that technology has the ability to transform training and coaching and I want to part of that transition.
+
+For the past two years, I've been a graduate student at the University of Waterloo building 3-D simulations of the golf swing for use in designing golf clubs. The simulations were built using MapleSim and Matlab. In this role, I worked independently to gather experimental data on the golf swing using electromyography, IMUs (MVN suit), and video motion capture systems. The experimental measurements were digitally processed to determine useful features for comparing to simulated swings.  The resulting model was presented at the International Sports Engineering Association conference in Sheffield and was delivered to an industry partner.
+
+During my undergrad, I had many opportunities as part of the coop program at the University of Waterloo to design, develop, and distribute software.  At Apple Inc. (2 internships) I designed and developed an internal application for testing location algorithms that included iOS, OS X, and server-side components using Cocoa, Objective-C, C++, and Python.  This application was selected from all of the intern projects to be presented to Senior VP Scott Forstall at the end of my first term at Apple. While it was not intended to be released to the public, the application was included with internal builds of iOS and I used it to help develop a new Kalman Filter based algorithm for determining device locations.
+
+My other co-op terms also gave me opportunities to design and develop software projects, including sports related work.  I spent 8 months working on statistics software for basketball coaches at CREZ where I worked on developing the client-side of a platform for live-streaming basketball game stats. As the sole client developer, I fixed bugs, wrote new features using C\#, delivered installer packages, and supported customers directly. I enjoyed working with basketball coaches to determine what they needed from our software and then creating those features for them.
+
+On my own, I've built a few smaller projects which can be found on my website at \url{http://ddajohnson.com/projects}.
+
+I'm excited by the chance to work in a dynamic, startup work environment on a product that will help athletes improve their performance. Helping athletes and coaches excel is exactly where I want to apply my technical skills. I hope to hear from you soon.
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

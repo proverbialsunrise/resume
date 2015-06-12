@@ -33,9 +33,9 @@
 
 \setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
 
-\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolor}{gray}{.77}  % Outer background color of title bars (0 = black, 1 = white)
 
-\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+\definecolor{shadecolorB}{gray}{.94}  % Inner background color of title bars
 
 %-----------------------------------------------------------
 
@@ -85,10 +85,12 @@
 
 }
 
+%\renewcommand*\sfdefault{lmss}
+
+\renewcommand*{\familydefault}{\sfdefault}
 
 \newcommand{\ressubheading}[4]{
-
-\renewcommand{\cftdotfill}[1]{%
+  \renewcommand{\cftdotfill}[1]{%
   \def\@tempa{#1}%
   \def\@tempb{\cftnodots}%
   \ifx\@tempa\@tempb
@@ -116,19 +118,19 @@
 
 Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajohnson.com \\
 
-112 Mocassin Dr. Waterloo, ON, N2L3G6 & (226)-989-0511\\
+142 Wood St. Apt B Kitchener, ON & (226)-989-0511\\
 
-                                      & \href{http://github.com/proverbialsunrise}{\texttt{github.com/proverbialsunrise}} \\
+                                      & \href{http://ddajohnson.com}{\texttt{http://ddajohnson.com}} \\
+
 
     \hline
 \end{tabular*}
 
-\vspace{25pt}
+\vspace{15pt}
 
-{\bf Goal:} To work with a team solving interesting problems in biomechanics and technology.  I'm passionate about playing sports competitively and using technology to improve athlete performance or training would be my ideal role.  
+{\bf Goal:} To work with a team solving interesting problems in biomechanics and technology.  I'm passionate about competitive sports and my ideal position would involve using technology to improve athlete performance, training, or coaching.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\vspace{7pt}
 
 \resheading{Skills}
 
@@ -136,17 +138,17 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 
 \begin{itemize}
 
-\item {\bf Development:} Objective-C/Cocoa, C/C++, Python, MATLAB, C\#, Git
+\item {\bf Development:} Objective-C/Cocoa, C/C++, Python, MATLAB, Git, iOS, Unity
 
-\item {\bf Modeling:} 2-D and 3-D Dynamics and simulation of biomechanical systems, control systems
+\item {\bf Modeling:} 2-D and 3-D Dynamics and simulation of multibody systems, control systems
 
-\item {\bf Application Design:} Designed, built, and released applications for iOS, Mac, Windows, and the web: both in the workplace and on my own time.
+\item {\bf Application Design:} Designed, built, and released applications for iOS, Mac, Windows, and the web: both in the workplace and on my own time
 
-\item {\bf Teamwork:} Enjoys working with others to excel in finding solutions to difficult problems.
+\item {\bf Experimentation:} Designed and executed experiments involving human subjects and processed the resulting data
 
-\item {\bf Communication:} Excels at writing clear and concise documents and explaining ideas.
+\item {\bf Self-driven:} Motivated to perform individual research projects with minimal direction
 
-\item {\bf Learning:} Loves to learn new things and explore new areas of technology. Quick to pick up new skills and technologies as required. 
+\item {\bf Learning:} Loves to learn new things and explore new ideas. Quick to pick up new skills and technologies as required
 
 \end{itemize}
 
@@ -156,15 +158,15 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 \resheading{Education}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \ressubheading{University of Waterloo}{Waterloo, ON}{\textit{Masters of Applied Science - Systems Design Engineering}}{2012-2014(est.)}
+    \ressubheading{University of Waterloo}{Waterloo, ON}{\textit{Masters of Applied Science - Systems Design Engineering}}{2012-2015}
         \begin{itemize}
-            \resitem{Created a comprehensive golfer swing model using MapleSim and Matlab for evaluating golf clubs. The model is optimally controlled to accomodate different simulated clubs.}
+            \resitem{Created a comprehensive golfer swing model using MapleSim and Matlab. The model is controlled using parameter optimization to evaluate golf club design decisions.}
             \resitem{Delivered the completed model to an outside industry partner along with documentation on how to use and modify the model to evaluate golf clubs.}
-            \resitem{Measured golfer motion and extracted swing information using portable EMG, IMU (Moven Suit), and motion capture (Eagle Vision infrared cameras) systems.}
+            \resitem{Measured golfer motion and extracted swing information using portable EMG, IMU (MVN Suit), and motion capture (Eagle Vision infrared cameras) systems. Digitally processed the resulting signals to extract features from the golf swing for comparison to simulation data.}
+            \resitem{Managed Linux server including web sites, file shares, and wiki pages.}
     \end{itemize}
+        \ressubheading{University of Waterloo}{Waterloo, ON}{\textit{BASc - Systems Design Engineering, Dean's Honour List, Co-operative Program}}{2007 - 2012}
 
-        \ressubheading{University of Waterloo}{Waterloo, ON}{\textit{BASc - Honours Systems Design Engineering, Co-operative Program}}{2007 - 2012}
-	
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,8 +178,8 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 
 	\begin{itemize}
 
-	    \resitem{Designed and implemented a testing framework for location algorithms on iPhones and iPads in the form of an iOS application, Mac application, and accompanying server-side code}
-	    \resitem{Developed an improved location algorithm using Kalman Filters for determining an iOS device's location in a particular type of environment}
+	    \resitem{Designed and implemented a testing framework for location algorithms on iPhones and iPads in the form of an iOS application, Mac application, and accompanying server-side code. This application was used by the iOS Location team to develop and test indoor positioning systems.}
+	    \resitem{Developed an improved location algorithm using Kalman Filters for determining an iOS device's location during indoor positioning.}
 
 	\end{itemize}
 
@@ -186,12 +188,13 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
         \ressubheading{University of Waterloo  (Vision and Image Processing Lab)}{Waterloo, ON}{\textit{Research Assistant} - \href{http://vip.uwaterloo.ca/website-package}{\texttt{vip.uwaterloo.ca/website-package}}}{May-Aug 2011}
 
 	\begin{itemize}
-	
+
 		\resitem{Developed algorithms for processing SAR imagery of sea-ice in the Canadian North}
 		\resitem{Implemented algorithms within existing image processing software in Visual C++.}
-        \resitem{Supervised and assisted a co-op student building a website for the lab using Drupal resulting in a package for building research group websites that was released as open-source} 
-	
-	\end{itemize}
+    \resitem{Supervised and assisted a co-op student building a website for the lab using Drupal resulting in a package for building research group websites that was released as open-source}
+    \resitem{Administered Apache, PHP, MySQL web server for hosting the lab website}
+
+  \end{itemize}
 
 
 
@@ -200,8 +203,8 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 	\begin{itemize}
 
 		\resitem{Developed and performed experiments on software keyboards for mobile devices using C\#.}
-        \resitem{Developed micro-controller code for RF chamber test rig for handheld GPS devices.}
-		\resitem{Tested hand held GPS devices for accuracy and interface usability.}
+    \resitem{Developed embedded micro-controller code for RF chamber test rig for handheld GPS devices.}
+    \resitem{Tested hand held GPS devices for accuracy and interface usability.}
 
 	\end{itemize}
 
@@ -211,11 +214,11 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 	\begin{itemize}
 
 		\resitem{Developed statistics software for basketball coaches in Visual Basic .NET and C\#}
-  		\resitem{Implemented client-side code for livestreaming basketball statistics to a web service.}
-        \resitem{Packaged and released software to clients using InstallShield.}
+  	\resitem{Implemented client-side code for livestreaming basketball statistics to a web service.}
+    \resitem{Packaged and released software to clients using InstallShield.}
 		\resitem{Provided technical support through direct interaction with customers and written documentation}
 
-	\end{itemize}
+  \end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,13 +227,13 @@ Graduate Student, Systems Design Engineering, University of Waterloo & dan@ddajo
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ressubheading{Wedding Website}{nodeJS, Javascript, HTML \& CSS}{\href{http://github.com/proverbialsunrise/weddingsite}{\texttt{github.com/proverbialsunrise/weddingsite}}}{2014}
+\ressubheading{Bearded Baritones Website}{nodeJS, Javascript, HTML \& CSS}{\href{http://github.com/proverbialsunrise/baritonesWebsite}{\texttt{github.com/proverbialsunrise/baritonesWebsite}}}{2015}
+\vspace{10pt}
+
+\ressubheading{Space Shooter Game}{Unity, C\#}{\href{http://ddajohnson.com/shooter/shooter.html}{\texttt{ddajohnson.com/shooter/shooter.html}}}{2015}
 \vspace{10pt}
 
 \ressubheading{pySTL}{Python}{\href{http://github.com/proverbialsunrise/pySTL}{\texttt{github.com/proverbialsunrise/pySTL}}}{2014}
-\vspace{10pt}
-
-\ressubheading{Simple Ultimate Stats (In Progress)}{Objective-C}{\href{http://github.com/proverbialsunrise/ultimatestats}{\texttt{github.com/proverbialsunrise/ultimatestats}}}{2013-}
 \vspace{10pt}
 
 \ressubheading{Hymnal Mobile Application}{Objective-C, C++, Java }{\href{http://github.com/proverbialsunrise/hymnalapp}{\texttt{github.com/proverbialsunrise/hymnalapp}}}{2010}
